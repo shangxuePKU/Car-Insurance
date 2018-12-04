@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/login1_background"
+    android:gravity="center_horizontal">
+
+    <RelativeLayout
+        android:id="@+id/layout6_001"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="10dp"
+        android:background="@drawable/login1_001"
+        android:layout_alignParentTop="true" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_img6_001"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:src="@drawable/main2_002"
+            android:scaleType="fitXY"
+            android:onClick="btn_img6_001"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:text="签章"
+            />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:id="@+id/img6_001"
+        android:scaleType="fitXY"
+        android:src="@drawable/main6_001"
+        android:paddingTop="0dp"
+        android:layout_below="@id/layout6_001"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true" />
+
+    <LinearLayout
+        android:layout_below="@+id/img6_001"
+        android:id="@+id/layout6_002"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:gravity="center|start"
+            android:background="@drawable/main2_003"
+            android:layout_alignParentLeft="true"
+            android:weightSum="1">
+
+            <TextView
+                android:padding="10dp"
+                android:text="整备质量:"
+                android:textSize="15dp"
+                android:gravity="center_vertical"
+                android:textColor="@android:color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+            <EditText
+                android:id="@+id/edit6_001"
+                android:hint="1270"
+                android:padding="10dp"
+                android:textSize="15dp"
+                android:gravity="center_vertical"
+                android:textColor="@android:color/black"
+                android:background="@android:color/transparent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.02" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:gravity="center|start"
+            android:background="@drawable/main2_003"
+            android:layout_alignParentLeft="true"
+            android:weightSum="1">
+            <TextView
+                android:padding="10dp"
+                android:text="纳税人识别号:"
+                android:textSize="15dp"
+                android:gravity="center_vertical"
+                android:textColor="@android:color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+            <EditText
+                android:id="@+id/edit6_002"
+                android:hint="132106689230111688"
+                android:padding="10dp"
+                android:textSize="15dp"
+                android:gravity="center_vertical"
+                android:layout_marginRight="15dp"
+                android:background="@android:color/transparent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.00" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:orientation="horizontal"
+            android:gravity="center|start"
+            android:background="@drawable/main2_003"
+            android:layout_alignParentLeft="true"
+            android:weightSum="1">
+            <TextView
+                android:padding="10dp"
+                android:text="当年应缴:"
+                android:textSize="15dp"
+                android:gravity="center_vertical"
+                android:textColor="@android:color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                />
+
+            <EditText
+                android:id="@+id/edit6_003"
+                android:hint="350"
+                android:padding="10dp"
+                android:textSize="15dp"
+                android:gravity="center_vertical"
+                android:layout_marginRight="15dp"
+                android:background="@android:color/transparent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_weight="0.99" />
+
+            <TextView
+                android:padding="10dp"
+                android:text="元"
+                android:textSize="15dp"
+                android:gravity="center_vertical"
+                android:textColor="@android:color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:orientation="horizontal"
+            android:gravity="center|start"
+            android:background="@drawable/main2_003"
+            android:layout_alignParentLeft="true"
+            android:weightSum="1">
+            <TextView
+                android:padding="10dp"
+                android:text="往年补缴:"
+                android:textSize="15dp"
+                android:gravity="center_vertical"
+                android:textColor="@android:color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                />
+
+            <EditText
+                android:id="@+id/edit6_004"
+                android:hint="0"
+                android:padding="10dp"
+                android:textSize="15dp"
+                android:gravity="center_vertical"
+                android:layout_marginRight="15dp"
+                android:background="@android:color/transparent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_weight="0.99" />
+
+            <TextView
+                android:padding="10dp"
+                android:text="元"
+                android:textSize="15dp"
+                android:gravity="center_vertical"
+                android:textColor="@android:color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:orientation="horizontal"
+            android:gravity="center|start"
+            android:background="@drawable/main2_003"
+            android:layout_alignParentLeft="true"
+            android:weightSum="1">
+            <TextView
+                android:padding="10dp"
+                android:text="滞纳金:"
+                android:textSize="15dp"
+                android:gravity="center_vertical"
+                android:textColor="@android:color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                />
+
+            <EditText
+                android:id="@+id/edit6_005"
+                android:hint="0"
+                android:padding="10dp"
+                android:textSize="15dp"
+                android:gravity="center_vertical"
+                android:layout_marginRight="15dp"
+                android:background="@android:color/transparent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_weight="0.99" />
+
+            <TextView
+                android:padding="10dp"
+                android:text="元"
+                android:textSize="15dp"
+                android:gravity="center_vertical"
+                android:textColor="@android:color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:orientation="horizontal"
+            android:gravity="center|start"
+            android:background="@drawable/main2_003"
+            android:layout_alignParentLeft="true"
+            android:weightSum="1">
+            <TextView
+                android:padding="10dp"
+                android:text="合计:"
+                android:textSize="15dp"
+                android:gravity="center_vertical"
+                android:textColor="@android:color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                />
+
+            <EditText
+                android:id="@+id/edit6_006"
+                android:hint="350"
+                android:padding="10dp"
+                android:textSize="15dp"
+                android:gravity="center_vertical"
+                android:layout_marginRight="15dp"
+                android:background="@android:color/transparent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_weight="0.99" />
+
+            <TextView
+                android:padding="10dp"
+                android:text="元"
+                android:textSize="15dp"
+                android:gravity="center_vertical"
+                android:textColor="@android:color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:gravity="center|start"
+            android:background="@drawable/main2_003"
+            android:layout_alignParentLeft="true"
+            android:weightSum="1"
+            android:orientation="horizontal">
+            <TextView
+                android:padding="10dp"
+                android:text="完税凭证号:"
+                android:textSize="15dp"
+                android:gravity="center_vertical"
+                android:textColor="@android:color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+            <EditText
+                android:id="@+id/edit6_007"
+                android:hint="B00303224268"
+                android:padding="10dp"
+                android:clickable="true"
+
+                android:textSize="15dp"
+                android:textColor="@android:color/black"
+                android:background="@android:color/transparent"
+
+                android:layout_marginRight="15dp"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.90" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:gravity="center|start"
+            android:background="@drawable/main2_003"
+            android:layout_alignParentLeft="true"
+            android:weightSum="1"
+            android:orientation="horizontal">
+            <TextView
+                android:padding="10dp"
+                android:text="开具税务机关:"
+                android:textSize="15dp"
+                android:gravity="center_vertical"
+                android:textColor="@android:color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="北京市朝阳区地税局"
+                android:id="@+id/edit6_008"
+                android:gravity="center_vertical"
+                android:textColor="@android:color/black"
+                android:background="@android:color/transparent"
+                android:padding="10dp"
+                android:textSize="15dp"
+
+                android:layout_weight="1.00" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+    <Button
+        android:id="@+id/btn6_001"
+        android:layout_below="@id/layout6_002"
+        android:layout_margin="20dp"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:onClick="btn6_001"
+        android:text="下一步"
+        android:textSize="20dp"
+        android:textColor="@android:color/white"
+        android:background="#10000000"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        />
+</RelativeLayout>

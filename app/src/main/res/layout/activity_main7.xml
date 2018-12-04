@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/login1_background"
+    android:gravity="center_horizontal">
+
+    <RelativeLayout
+        android:id="@+id/layout7_001"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="10dp"
+        android:background="@drawable/login1_001"
+        android:layout_alignParentTop="true" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_img7_001"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:src="@drawable/main2_002"
+            android:scaleType="fitXY"
+            android:onClick="btn_img7_001"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:text="签章"
+            />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:id="@+id/img7_001"
+        android:scaleType="fitXY"
+        android:src="@drawable/main7_001"
+        android:paddingTop="0dp"
+        android:layout_below="@id/layout7_001"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true" />
+
+    <LinearLayout
+        android:layout_below="@+id/img7_001"
+        android:id="@+id/layout7_002"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:gravity="center|start"
+            android:background="@android:color/transparent"
+            android:layout_alignParentLeft="true"
+            >
+
+            <TextView
+                android:padding="10dp"
+                android:text="特别约定:"
+                android:textSize="15dp"
+                android:gravity="center_vertical"
+                android:textColor="@android:color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+        </LinearLayout>
+
+        <EditText
+
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:id="@+id/edit7_001"
+            android:hint="1.您的车辆不享受奥运限行减免，属按尾号限行范围，进行交强险保费减免，减免总天数为53天，减免保费87.23，减免后保费金额＝本年度交强险保费金额－减免保费金额。\n
+特别提示：除法律法规另有规定外，投保人拥有保险合同解除权，涉及（减）退保保费的，退还给投保人。\n本单投保人为：李四"
+            android:padding="10dp"
+            android:textSize="15dp"
+            android:gravity="center_vertical"
+            android:textColor="@android:color/black"
+            android:background="@drawable/main2_003"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+             />
+    </LinearLayout>
+
+
+
+
+
+    <Button
+        android:id="@+id/btn7_001"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:onClick="btn7_001"
+        android:text="下一步"
+        android:textSize="20dp"
+        android:textColor="@android:color/white"
+        android:background="#10000000"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="85dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

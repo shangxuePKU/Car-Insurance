@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/login1_background"
+    android:gravity="center_horizontal">
+
+    <RelativeLayout
+        android:id="@+id/layout4_001"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="10dp"
+        android:background="@drawable/login1_001"
+        android:layout_alignParentTop="true" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_img4_001"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:src="@drawable/main2_002"
+            android:scaleType="fitXY"
+            android:onClick="btn_img4_001"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:text="签章"
+            />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:id="@+id/img4_001"
+        android:scaleType="fitXY"
+        android:src="@drawable/main4_001"
+        android:paddingTop="0dp"
+        android:layout_below="@id/layout4_001"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true" />
+
+    <LinearLayout
+        android:layout_below="@+id/img4_001"
+        android:id="@+id/layout4_002"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:gravity="center|start"
+            android:background="@drawable/main2_003"
+            android:layout_alignParentLeft="true"
+            android:weightSum="1">
+
+            <TextView
+                android:padding="10dp"
+                android:text="死亡伤残赔偿限额:"
+                android:textSize="15dp"
+                android:gravity="center_vertical"
+                android:textColor="@android:color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+            <EditText
+                android:id="@+id/edit4_001"
+                android:hint="110000"
+                android:padding="10dp"
+                android:textSize="15dp"
+                android:gravity="center_vertical"
+                android:textColor="@android:color/black"
+                android:background="@android:color/transparent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.99" />
+            <TextView
+                android:padding="10dp"
+                android:text="元"
+                android:textSize="15dp"
+                android:gravity="center_vertical"
+                android:textColor="@android:color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:gravity="center|start"
+            android:background="@drawable/main2_003"
+            android:layout_alignParentLeft="true"
+            android:weightSum="1">
+            <TextView
+                android:padding="10dp"
+                android:text="无责任死亡伤残赔偿限额:"
+                android:textSize="15dp"
+                android:gravity="center_vertical"
+                android:textColor="@android:color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+            <EditText
+                android:id="@+id/edit4_002"
+                android:hint="11000"
+                android:padding="10dp"
+                android:textSize="15dp"
+                android:gravity="center_vertical"
+                android:layout_marginRight="15dp"
+                android:background="@android:color/transparent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_weight="1.01" />
+            <TextView
+                android:padding="10dp"
+                android:text="元"
+                android:textSize="15dp"
+                android:gravity="center_vertical"
+                android:textColor="@android:color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:orientation="horizontal"
+            android:gravity="center|start"
+            android:background="@drawable/main2_003"
+            android:layout_alignParentLeft="true"
+            android:weightSum="1">
+            <TextView
+                android:padding="10dp"
+                android:text="医疗费用赔偿限额:"
+                android:textSize="15dp"
+                android:gravity="center_vertical"
+                android:textColor="@android:color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                />
+
+            <EditText
+                android:id="@+id/edit4_003"
+                android:hint="10000"
+                android:padding="10dp"
+                android:textSize="15dp"
+                android:gravity="center_vertical"
+                android:layout_marginRight="15dp"
+                android:background="@android:color/transparent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_weight="1.01" />
+
+            <TextView
+                android:padding="10dp"
+                android:text="元"
+                android:textSize="15dp"
+                android:gravity="center_vertical"
+                android:textColor="@android:color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:gravity="center|start"
+        android:background="@drawable/main2_003"
+        android:layout_alignParentLeft="true"
+        android:weightSum="1"
+        android:orientation="horizontal">
+        <TextView
+            android:padding="10dp"
+            android:text="无责任医疗费用赔偿限额:"
+            android:textSize="15dp"
+            android:gravity="center_vertical"
+            android:textColor="@android:color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="1000"
+            android:id="@+id/edit4_004"
+            android:gravity="center_vertical"
+            android:textColor="@android:color/black"
+            android:background="@android:color/transparent"
+            android:padding="10dp"
+            android:textSize="15dp"
+
+            android:layout_weight="0.96" />
+        <TextView
+            android:padding="10dp"
+            android:text="元"
+            android:textSize="15dp"
+            android:gravity="center_vertical"
+            android:textColor="@android:color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:gravity="center|start"
+            android:background="@drawable/main2_003"
+            android:layout_alignParentLeft="true"
+            android:weightSum="1"
+            android:orientation="horizontal">
+            <TextView
+                android:padding="10dp"
+                android:text="财产损失赔偿限额:"
+                android:textSize="15dp"
+                android:gravity="center_vertical"
+                android:textColor="@android:color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="2000"
+                android:id="@+id/edit4_005"
+                android:gravity="center_vertical"
+                android:textColor="@android:color/black"
+                android:background="@android:color/transparent"
+                android:padding="10dp"
+                android:textSize="15dp"
+
+                android:layout_weight="1.01" />
+            <TextView
+                android:padding="10dp"
+                android:text="元"
+                android:textSize="15dp"
+                android:gravity="center_vertical"
+                android:textColor="@android:color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:gravity="center|start"
+            android:background="@drawable/main2_003"
+            android:layout_alignParentLeft="true"
+            android:weightSum="1"
+            android:orientation="horizontal">
+            <TextView
+                android:padding="10dp"
+                android:text="无责任财产损失赔偿限额:"
+                android:textSize="15dp"
+                android:gravity="center_vertical"
+                android:textColor="@android:color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+            <EditText
+                android:layout_width="152dp"
+                android:layout_height="wrap_content"
+                android:hint="100"
+                android:id="@+id/edit4_006"
+                android:gravity="center_vertical"
+                android:textColor="@android:color/black"
+                android:background="@android:color/transparent"
+                android:padding="10dp"
+                android:textSize="15dp"
+
+                />
+            <TextView
+                android:padding="10dp"
+                android:text="元"
+                android:textSize="15dp"
+                android:gravity="center_vertical"
+                android:textColor="@android:color/black"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+
+                android:layout_weight="1.43" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+    <Button
+        android:id="@+id/btn4_001"
+        android:layout_below="@id/layout4_002"
+        android:layout_margin="20dp"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:onClick="btn4_001"
+        android:text="下一步"
+        android:textSize="20dp"
+        android:textColor="@android:color/white"
+        android:background="#10000000"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        />
+</RelativeLayout>

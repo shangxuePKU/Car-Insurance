@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/login1_background"
+    android:gravity="center_horizontal">
+
+    <RelativeLayout
+        android:id="@+id/layout8_001"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="10dp"
+        android:background="@drawable/login1_001"
+        android:layout_alignParentTop="true" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_img8_001"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:src="@drawable/main2_002"
+            android:scaleType="fitXY"
+            android:onClick="btn_img8_001"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:text="签章"
+            />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:id="@+id/img8_001"
+        android:scaleType="fitXY"
+        android:src="@drawable/main8_001"
+        android:paddingTop="0dp"
+        android:layout_below="@id/layout8_001"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true" />
+
+    <LinearLayout
+        android:layout_below="@+id/img8_001"
+        android:id="@+id/layout8_002"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:gravity="center|start"
+            android:background="@android:color/transparent"
+            android:layout_alignParentLeft="true"
+            >
+
+            <TextView
+                android:padding="10dp"
+                android:text="重要提示:"
+                android:textSize="15dp"
+                android:gravity="center_vertical"
+                android:textColor="@android:color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+        </LinearLayout>
+
+        <EditText
+
+
+            android:id="@+id/edit8_001"
+            android:textSize="15dp"
+            android:padding="10dp"
+            android:hint="1.请详细阅读保险条款，特别是责任免除和投保人、被保险人义务。\n2.收到本保险单后，请立即核对，如有不符或遗漏，请及时通知保险人并办理变更或补充手续。\n3.保险费应一次性交清，请您及时核对保险单和发票（收据），如有不符，请及时与保险人联系。\n4.投保人应如实告知对保险费计算有影响的或被保险机动车因改装、加载、改变使用性质等导致危险程度增加的重要事项，并及时通知保险人办理批改手续。\n5.被保险人应当在交通事故发生后及时通知保险人。"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            />
+    </LinearLayout>
+
+
+
+
+
+    <Button
+        android:id="@+id/btn8_001"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:onClick="btn8_001"
+        android:text="下一步"
+        android:textSize="20dp"
+        android:textColor="@android:color/white"
+        android:background="#10000000"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="85dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
